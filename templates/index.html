@@ -1,12 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/style.css %'}">
+    <link rel="stylesheet" href="../static/css/style.css">
+    <script src="../static/js/script.js"></script>
+    <script src="{% static 'js/script.js '%}"></script>
+    <title>Diary</title>
 </head>
-<body>
-    
+
+<body class="background">
+    <main>
+        <header>
+            <a href="./index.html">
+                <h1>Diary</h1>
+            </a>
+            <img src="../static/img/Diary.png" alt="Diary">
+            
+        </header>
+        <section>
+                <a class="GoTo" href="#">다이어리 작성</a>
+                <a class="GoTo" href="./login.html">로그인</a>
+        </section>
+        <footer>
+            copyright &copy; by 4Team all right reserved.
+        </footer>
+    </main>
 </body>
+
 </html>
