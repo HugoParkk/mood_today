@@ -19,14 +19,41 @@
                 <h1>Diary</h1>
             </a>
             <form class="Put" method="post">
-                <input class="Put" type="text" name="e-mail" placeholder="E-MAIL"><br>
-                <input class="Put" type="password" name="password" placeholder="PASSWORD"><br>
+                <input id="email" class="Put" type="text" name="e-mail" placeholder="E-MAIL"><br>
+                <input id="password" class="Put" type="password" name="password" placeholder="PASSWORD"><br>
                 <!-- <input class="Put" id="submit" type="submit" > -->
-                <button class="Put" id="submit">Login</button>
+                <a href="#" class="Put" id="submit">Login</button>
                 <a class="GoTo" href="./join.html">Register</a>
             </form>
         </header>
     </main>
+    <script>
+
+        // window.localStorage.setItem('송기은', 19)
+        // window.localStorage.setItem('0000', 0);
+
+        // const name = window.localStorage.getItem('송기은')
+        // const pw = window.localStorage.getItem('0000')
+
+        const email = document.querySelector("#email");
+        const password = document.querySelector("#password");
+        const submit = document.querySelector("#submit");
+
+        function CheckValue() {
+            const ID = email.vaule;
+            const PW = password.vaule;
+            localStorage.setItem(ID, PW);
+            }
+
+        function init() {
+            submit.addEventListener("click", CheckValue);
+        }
+
+        init();
+
+    </script>
 </body>
 
 </html>
+
+<!-- 브라우저에 보여준다 화면에 로그인 한 장면을 보여준다 -->
